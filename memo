@@ -1,0 +1,7 @@
+'/' -> 절대경로 (시작점)
+' ' -> 상대경로
+'./' -> 상대경로
+'../' -> 상대경로
+
+
+C:\nao\nayoung\web\workspace\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ServletStudy-20220823-nao\WEB-INF\classes\com\servlet\study\web\servlet\board
