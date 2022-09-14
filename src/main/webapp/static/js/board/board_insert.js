@@ -10,29 +10,37 @@ writeButton.onclick = () => {
 	const content = document.querySelector(".board-content");
 	
 	let board = {
-	"boardTitle": title.value,
-	"boardWriter": title.writer,
-	"boardContent": title.content,
+		"boardTitle": title.value,
+		"boardWriter": writer.value,
+		"boardContent": content.value
 	}
 	
-	send(board);	
+	send(board);
 }
 
-function send() {
+function send(board) {
 	const request = {
-		async: false,					// async : 동기(false), 비동기(true)<default
-		type: "post",					// RequestMethod
-		url: "/api/v1/board/addition",	// 요청 URL
-		data: board,					// 전송 데이터
-		dataType: "json",				// 응답 데이터의 형식(Response Content Type)
-		success: (response) => {		// 요청에 대한 응답이 성공했을 때 실행되는 funtion
+		async: false,						// async 동기(false), 비동기(true)
+		type: "post",						// RequestMethod
+		url: "/api/v1/board/addition",		// 요청 URL
+		data: board,						// 전송 데이터
+		dataType: "json",					// 응답 데이터의 형식(Response ContentType)
+		success: (response) => {			// 요청에 대한 응답이 성공했으면 실행되는 function
 			console.log(response);
 		},
-		error: (error) => {				// 요청 또는 응답이 실패했을 때 오류처리
+		error: (error) => {					// 요청 또는 응답이 실패하였을 때 오류처리
 			console.log(error);
 		}
 	}
 	
 	$.ajax(request);
-	
 }
+
+
+
+
+
+
+
+
+

@@ -15,14 +15,14 @@ public class ContentTypeServlet extends HttpServlet {
 		System.out.println("요청 URL: " + request.getRequestURL());
 		System.out.println("요청 Method: " + request.getMethod());
 		System.out.println("요청 param(id): " + request.getParameter("id"));
-		System.out.println("요청 param(password): " + request.getParameter("password"));
+		System.out.println("요청 param(pw): " + request.getParameter("password"));
 		System.out.println("요청 param(email): " + request.getParameter("email"));
 		
 		request.getRequestDispatcher("/WEB-INF/dispatcher-test.html").forward(request, response);
 		
-		response.getWriter().print("application/json; charset=utf-8");
-		
-		response.getWriter().print("{\"name\":\"junil\"}");
+//		response.setContentType("application/json; charset=utf-8");
+//		
+//		response.getWriter().print("{\"name\":\"김준일\"}");
 		
 //		response.getWriter().print("<html>");
 //		response.getWriter().print("<head>");
@@ -35,3 +35,11 @@ public class ContentTypeServlet extends HttpServlet {
 	}
 
 }
+
+
+
+
+
+
+
+

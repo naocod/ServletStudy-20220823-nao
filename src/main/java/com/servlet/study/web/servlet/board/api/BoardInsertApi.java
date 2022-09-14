@@ -14,7 +14,7 @@ public class BoardInsertApi extends HttpServlet {
     public BoardInsertApi() {
         super();
     }
-
+    
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.print("title: ");
 		System.out.println(request.getParameter("boardTitle"));

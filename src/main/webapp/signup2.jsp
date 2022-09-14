@@ -4,11 +4,11 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>회원가입 model</title>
+		<title>회원가입 model2</title>
 		<style type="text/css">
 			table {
-				margin: 100px,auto;
-				
+				margin: 100px auto;	
+							
 				border: 1px solid #121212;
 				border-collapse: collapse;
 			}
@@ -23,7 +23,7 @@
 	</head>
 	
 	<body>
-		<form action="/signup/model2"> 
+		<form action="/signup/model2">
 			<table>
 				<thead>
 					<tr>
@@ -33,19 +33,19 @@
 				<tbody>
 					<tr>
 						<td>아이디: </td>
-						<td><input type="text" name="user_id">
+						<td><input type="text" name="user_id"></td>
 					</tr>
 					<tr>
 						<td>비밀번호: </td>
-						<td><input type="password" name="user_password">
+						<td><input type="password" name="user_password"></td>
 					</tr>
 					<tr>
 						<td>이름: </td>
-						<td><input type="text" name="user_name">
+						<td><input type="text" name="user_name"></td>
 					</tr>
 					<tr>
 						<td>이메일: </td>
-						<td><input type="text" name="user_email">
+						<td><input type="text" name="user_email"></td>
 					</tr>
 				</tbody>
 				<tfoot>

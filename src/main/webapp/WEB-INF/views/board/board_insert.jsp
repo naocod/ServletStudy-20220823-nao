@@ -49,3 +49,14 @@
 	<script type="text/javascript" src="/static/js/board/board_insert.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+

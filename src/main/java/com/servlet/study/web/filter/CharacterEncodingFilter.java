@@ -13,11 +13,14 @@ import javax.servlet.http.HttpFilter;
 @WebFilter("/*")
 public class CharacterEncodingFilter extends HttpFilter implements Filter {
        
-    public CharacterEncodingFilter() {
+	private static final long serialVersionUID = 1L;
+
+	public CharacterEncodingFilter() {
         super();
     }
-    
+
 	public void destroy() {
+		
 	}
 
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain) throws IOException, ServletException {
@@ -31,6 +34,13 @@ public class CharacterEncodingFilter extends HttpFilter implements Filter {
 	}
 
 	public void init(FilterConfig fConfig) throws ServletException {
+		
 	}
 
 }
+
+
+
+
+
+
